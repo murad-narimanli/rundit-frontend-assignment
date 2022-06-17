@@ -4,7 +4,8 @@ As part of our application process, we'd like to see what you can produce by giv
 
 ## Assignment
 
-The goal of this assignment is to build two components that display simplified company investment data from a provided data source.
+The goal of this assignment is to build two components, Investment Listing and Investment Summary, that display simplified company investment data from a provided data source.
+
 The two components need to be displayed in the same view and when an investment gets deleted, the changes should be reflected on the other component as well.
 
 Take a look at the detailed [Adobe XD component sketches](https://xd.adobe.com/view/a7c5a29b-f0ee-41b2-97d0-558e25559261-f296/grid) to get spacing values, fonts, colors etc. The font used in the sketches is Open Sans, which is available via Google Fonts.
