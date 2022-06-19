@@ -9,7 +9,7 @@ import router, { routesNames } from "./router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 // main css
-import "./assets/scss/main.css";
+import "./assets/scss/main.scss";
 import "./assets/css/animate.css";
 
 Vue.config.productionTip = false;
