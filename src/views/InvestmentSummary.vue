@@ -86,8 +86,10 @@ export default Vue.extend({
     },
   },
   mounted() {
-    this.getAllCompanies();
-    this.getAllInvestments();
+    if (!this.investmentSummary.length) {
+      this.getAllCompanies();
+      this.getAllInvestments();
+    }
     this.selectedNumber = 1 | this.differences[0];
   },
 });

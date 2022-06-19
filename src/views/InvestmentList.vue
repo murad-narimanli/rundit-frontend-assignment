@@ -67,8 +67,10 @@ export default Vue.extend({
     ...mapActions(["getAllCompanies", "getAllInvestments", "deleteFromList"]),
   },
   mounted() {
-    this.getAllCompanies();
-    this.getAllInvestments();
+    if (!this.investmentList.length){
+      this.getAllCompanies();
+      this.getAllInvestments();
+    }
   },
   watch: {},
 });
