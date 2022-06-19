@@ -59,12 +59,7 @@ export default class Sidebar extends Vue {}
   content: "";
   z-index: -1;
 }
-#sidebar .h6 {
-  color: #fff;
-}
-#sidebar.active {
-  margin-left: -270px;
-}
+
 #sidebar h1 {
   margin-bottom: 20px;
   font-weight: 700;
@@ -78,20 +73,13 @@ export default class Sidebar extends Vue {}
   color: #fff;
   display: block;
 }
-#sidebar ul.components {
-  padding: 0;
-}
+
 #sidebar ul li {
   font-size: 16px;
 }
-#sidebar ul li > ul {
-  margin-left: 10px;
-}
-#sidebar ul li > ul li {
-  font-size: 14px;
-}
 #sidebar ul li a {
   padding: 10px 0;
+  transition: 0.2s ease-in-out;
   display: block;
   color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -100,10 +88,12 @@ export default class Sidebar extends Vue {}
   color: #fff;
 }
 #sidebar ul li a:hover {
+  transition: 0.2s ease-in-out;
   color: #fff;
 }
 #sidebar ul li.active > a {
   background: transparent;
+  transition: 0.2s ease-in-out;
   color: #fff;
 }
 @media (max-width: 991.98px) {
@@ -112,56 +102,7 @@ export default class Sidebar extends Vue {}
     max-width: 180px;
   }
 }
-#sidebar .custom-menu {
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  margin-right: -20px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-@media (prefers-reduced-motion: reduce) {
-  #sidebar .custom-menu {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-#sidebar .custom-menu .btn {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  position: relative;
-}
-#sidebar .custom-menu .btn i {
-  margin-right: -40px;
-  font-size: 14px;
-}
-#sidebar .custom-menu .btn.btn-primary {
-  background: transparent;
-  border-color: transparent;
-}
-#sidebar .custom-menu .btn.btn-primary:after {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background: #30e3ca;
-  border-radius: 10px;
-}
-#sidebar .custom-menu .btn.btn-primary:hover,
-#sidebar .custom-menu .btn.btn-primary:focus {
-  background: transparent !important;
-  border-color: transparent !important;
-}
+
 .footer {
   position: absolute;
   bottom: 20px;

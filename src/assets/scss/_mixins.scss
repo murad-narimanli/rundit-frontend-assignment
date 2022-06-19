@@ -1,0 +1,26 @@
+@mixin box-shadow($props...){
+  -webkit-box-shadow: $props;
+  -moz-box-shadow: $props;
+  box-shadow: $props;
+}
+
+@mixin size($height,$width){
+  height: $height;
+  width: $width;
+}
+@mixin sameSize($size){
+  height: $size;
+  width: $size;
+}
+@mixin boxOrient($orient){
+  -webkit-box-orient: $orient;
+  -moz-box-orient: $orient;
+  -ms-box-orient: $orient;
+}
+@mixin line($line){
+  -webkit-line-clamp: $line;
+  -moz-line-clamp: $line;
+  -ms-line-clamp: $line;
+  -o-line-clamp: $line;
+}
+

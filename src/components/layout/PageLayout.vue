@@ -5,7 +5,7 @@
     <!-- header -->
 
     <div class="p-4">
-      <div class="row">
+      <div class="row animated zoomIn">
         <slot></slot>
       </div>
     </div>
@@ -25,6 +25,4 @@ export default class PageLayout extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

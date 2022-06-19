@@ -7,12 +7,12 @@ export const Routes: RouteConfig[] = [
   {
     path: "/investment/list",
     name: RoutesNames.investmentList,
-    component: InvestmentList
+    component: InvestmentList,
   },
   {
     path: "/investment/summary",
     name: RoutesNames.investmentList,
-    component:InvestmentSummary
+    component: InvestmentSummary,
   },
   {
     path: "*",

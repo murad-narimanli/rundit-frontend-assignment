@@ -5,8 +5,20 @@ type DateString = string; // YYYY-MM-DD
 export interface Investment {
   amount: number;
   companyId: number;
+  companyName?: string;
   date: DateString;
   id: number;
+}
+
+export interface Diff {
+  difference: number;
+  amount: number;
+}
+
+export interface InvestmentSummary {
+  companyId: number;
+  companyName?: string;
+  dates: Diff[];
 }
 
 let _data: Investment[] = [

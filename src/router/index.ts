@@ -11,6 +11,6 @@ const router = new VueRouter({
   routes: Routes,
   linkActiveClass: "active",
 });
-export { Location, Route , routesNames};
+export { Location, Route, routesNames };
 
 export default router;

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar text-white fw-bold animated fadeIn">
+  <nav class="navbar text-white fw-bold animated fadeInDown">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">
         {{ name }}
